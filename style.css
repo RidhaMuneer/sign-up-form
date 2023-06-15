@@ -1,8 +1,23 @@
+:root.dark {
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(240, 240, 240);
+    --color-btn-bg: rgb(36, 36, 36);
+}
+  
+:root.light {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+}
+
 .body{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     font-family: 'Poppins', sans-serif;
+    color: var(--color-base-text);
+    background-color: var(--color-base-bg);
 }
 
 .image-section{
@@ -13,11 +28,6 @@
     align-items: center;
     margin-left: 5px;
     margin-top: -1%;
-}
-
-.form-section{
-    width: 70%;
-    height: 100%;
 }
 
 img{
@@ -35,4 +45,74 @@ img{
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+}
+
+.first-name-section, 
+.last-name-section, 
+.email-section,
+.phone-section,
+.password-section,
+.password-section,
+.button-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px; 
+}
+
+.form-section {
+    margin-top: 10%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+input{
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+label{
+    font-size: large;
+}
+
+.first-name-section label,
+.last-name-section label,
+.email-section label,
+.phone-section label,
+.password-section label {
+  flex-basis: 70%;
+  margin-right: 10px;
+}
+
+.first-name-section input,
+.last-name-section input,
+.email-section input,
+.phone-section input,
+.password-section input {
+  flex-grow: 1;
+  width: 100%;
+}
+
+form{
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+button{
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, 0.327) solid;
+    height: 40px;
+}
+
+a{
+    color: rgb(0, 131, 160);
 }
