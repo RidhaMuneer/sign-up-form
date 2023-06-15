@@ -6,32 +6,33 @@
 }
 
 .image-section{
-    border: 1px rebeccapurple solid;
     width: 30%;
-    height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: -1%;
 }
 
 .form-section{
-    border: 1px rgb(255, 0, 0) solid;
     width: 70%;
-    height: 500px;
+    height: 100%;
 }
 
 img{
-    width: 100%;
+    width: 135%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 .brand-name{
+    margin-top: 10%;
     position: absolute;
-    top: 25%;
-    left: 16%;
-    transform: translate(-50%, -50%);
     z-index: 1;
     color: rgb(0, 0, 0);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
